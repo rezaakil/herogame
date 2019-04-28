@@ -4,6 +4,9 @@
     background-origin:blue;
     border: 1px solid red;
 }
+.gameConsole{
+    border: 1px solid orange;
+}
 .hide{
     display: none;
 }

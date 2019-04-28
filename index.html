@@ -9,7 +9,7 @@
 
 
   <!-- 👍 YOUR HTML HERE code will be here👍 -->
-
+<div id="game" class="">
 <img id='inn' class='icons' onclick="rest(hero)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS77S7Z9BA_ICSqqcM-VY4xARZfxuiH3b-p6e9XiDNacx4eZ2Fi8A" alt="" height="" width="">
 
 <img id='dagger' class='icons hideClick' onclick="pickUpItem(hero,dagger)" src="https://static.thenounproject.com/png/346389-200.png" alt="" height="" width="">
@@ -18,7 +18,7 @@
 
 <img id='monster' class='icons' onclick="" src="https://cdn3.iconfinder.com/data/icons/fire-4/96/fire_monster-512.png" alt="" height="" width="">
 
-<button onclick="hideEnemy()">attack!</button>
+<button onclick="attackMonster()">attack!</button>
 
 <form>
   
@@ -39,6 +39,10 @@
     <textarea id="damageText"></textarea>
   </div>
   <div class="formSection">
+    <label for="">Monster health:</label>
+    <textarea id="monsterHealthText"></textarea>
+  </div>
+  <div class="formSection">
     <label for="">Name:</label>
     <input  type="text" id="name" onsubmit="submitName(); return false">
   </div>
@@ -47,7 +51,7 @@
   </div>
   
 </form>
-
+</div>
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
