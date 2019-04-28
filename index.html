@@ -10,15 +10,43 @@
 
   <!-- 👍 YOUR HTML HERE code will be here👍 -->
 
-<img id='inn' class='heroImg' onclick="rest(hero)" src="http://www.iconarchive.com/download/i59021/hopstarter/superhero-avatar/Avengers-Captain-America.ico" alt="" height="" width="">
-<img id='dagger' class='heroImg' onclick="pickUpItem(hero,'dagger')" src="https://static.thenounproject.com/png/346389-200.png" alt="" height="" width="">
-<img id='bag' class='heroImg' onclick="" src="https://cdn4.iconfinder.com/data/icons/bags-handbags/128/12-512.png" alt="" height="" width="">
-<img id='monster' class='heroImg' onclick="" src="https://cdn3.iconfinder.com/data/icons/fire-4/96/fire_monster-512.png" alt="" height="" width="">
+<img id='inn' class='icons' onclick="rest(hero)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS77S7Z9BA_ICSqqcM-VY4xARZfxuiH3b-p6e9XiDNacx4eZ2Fi8A" alt="" height="" width="">
 
-<button onclick="">attack!</button>
-<!-- <button onclick="rest2()">button2</button> -->
-<!-- <form>display stats!</form> -->
+<img id='dagger' class='icons hideClick' onclick="pickUpItem(hero,dagger)" src="https://static.thenounproject.com/png/346389-200.png" alt="" height="" width="">
 
+<img id='bag' class='icons' onclick="equipWeapon(hero)" src="https://cdn4.iconfinder.com/data/icons/bags-handbags/128/12-512.png" alt="" height="" width="">
+
+<img id='monster' class='icons' onclick="" src="https://cdn3.iconfinder.com/data/icons/fire-4/96/fire_monster-512.png" alt="" height="" width="">
+
+<button onclick="hideEnemy()">attack!</button>
+
+<form>
+  
+  <div class="formSection">
+    <label for="">Hero:</label>
+    <textarea id="nameText"></textarea>
+  </div>
+  <div class="formSection">
+    <label for="">Health:</label>
+    <textarea id="healthText"></textarea>
+  </div>
+  <div class="formSection">
+    <label for="">Weapon:</label>
+    <textarea id="weaponText"></textarea>
+  </div>
+  <div class="formSection">
+    <label for="">Damage:</label>
+    <textarea id="damageText"></textarea>
+  </div>
+  <div class="formSection">
+    <label for="">Name:</label>
+    <input  type="text" id="name" onsubmit="submitName(); return false">
+  </div>
+  <div class="button">
+    <button onclick="submitName(); return false" type="default">Ok</button>
+  </div>
+  
+</form>
 
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
