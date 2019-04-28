@@ -19,7 +19,7 @@ let dagger = {type:'dagger',damage:2} // this is object of dagger as variable
     //console.log('test rest') //testing if this function being called
     //alert(`Health of ${obj.name} is ${obj.health}`); //problem still!!!
     //alert('Health of'+ obj.name + 'is' + obj.health); //problem still!!!
-
+    if(obj.health === 10){alert(`Health of ${obj.name} is ${obj.health}`);}
     //console.log(obj.health)
     displayStats();
     return obj //returning the argument back which is an object
